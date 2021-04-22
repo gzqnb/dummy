@@ -1,0 +1,23 @@
+hbase:
+  zookeeper:
+    quorum: cdata01
+    property:
+      clientPort: 2181
+
+zookeeper:
+  znode:
+    parent: /zkData
+
+spring.datasource:
+  url: jdbc:postgresql://localhost:5433/db1
+  username: nevt
+  password: nevt@db1
+
+spring.jpa:
+  database: postgresql
+  properties.hibernate.dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  hibernate.ddl-auto: update
+  show-sql: false
+
+logging.level:
+  root: info
